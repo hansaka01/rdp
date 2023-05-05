@@ -1,15 +1,12 @@
 @echo off
- start .\ngrok\localtonet.exe authtoken iGve3jXl1qpLsDHyRaABmEb8o9YTdCVN0
+start .\ngrok\localtonet.exe AuthToken iGve3jXl1qpLsDHyRaABmEb8o9YTdCVN0
 echo --------------------------------Rdp by hansaka--------------------------------
-echo `                      ꓲ      ꓲ     /\     ꓲ\    ꓲ                             `
-echo `                      ꓲ      ꓲ    /  \    ꓲ \   ꓲ                             `
-echo `                      ꓲ—-—-—-ꓲ   /—-—-\   ꓲ  \  ꓲ                             `
-echo `                      ꓲ      ꓲ  /      \  ꓲ   \ ꓲ                             `
-echo `                      ꓲ      ꓲ /        \ ꓲ    \ꓲ                             `
-echo -----------------------------------------------------------------------------`
-
-
-
+echo `                                                                             `
+echo `                                                                             `
+echo `                                                                             `
+echo `                                                                             `
+echo `                                                                             `
+echo `-----------------------------------------------------------------------------`
 
 
 :x
