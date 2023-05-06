@@ -1,14 +1,44 @@
 @echo off
 start .\ngrok\localtonet.exe AuthToken iGve3jXl1qpLsDHyRaABmEb8o9YTdCVN0
+title Timer
+
+:start
+rem title Enter time to countdown from.
+
+rem cls
+rem  rem echo Enter time to countdown from.
+
+rem rem set/p "time=>
+set time= 31536000
+
+:loop
+cls
+
+set /a time=%time%-1
+if %time%==0 goto timesup
+
+title Counting down...
+
+echo.
+echo.
+
+echo.
+
 echo --------------------------------Rdp by hansaka--------------------------------
-echo `                                                                             `
-echo `                                                                             `
-echo `                                                                             `
-echo `                                                                             `
-echo `                                                                             `
-echo `-----------------------------------------------------------------------------`
+echo `                      ꓲ      ꓲ     /\     ꓲ\    ꓲ                             `
+echo `                      ꓲ      ꓲ    /  \    ꓲ \   ꓲ                             `
+echo `                      ꓲ—-—-—-ꓲ   /—-—-\   ꓲ  \  ꓲ                             `
+echo `                      ꓲ      ꓲ  /      \  ꓲ   \ ꓲ                             `
+echo `                      ꓲ      ꓲ /        \ ꓲ    \ꓲ                             `
+echo `                    You had left [%time%] seconds.                          `
+echo -----------------------------------------------------------------------------`
 
 
-:x
+ping localhost -n 2 > nul
+goto loop
 
-goto x
+:timesup
+echo your time is over
+
+pause
+goto start
