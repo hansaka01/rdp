@@ -9,13 +9,13 @@ rem cls
 rem  rem echo Enter time to countdown from.
 
 rem rem set/p "time=>
-set time= 31536000
+set time= 0
 
 :loop
 cls
 
-set /a time=%time%-1
-if %time%==0 goto timesup
+set /a time=%time%+1
+if %time%== -1 goto timesup
 
 title Counting down...
 
@@ -24,14 +24,14 @@ echo.
 
 echo.
 
-echo --------------------------------Rdp by hansaka--------------------------------
+echo --------------------------------Rdp by hansaka-------------------------------
 echo `                      ꓲ      ꓲ     /\     ꓲ\    ꓲ                             `
 echo `                      ꓲ      ꓲ    /  \    ꓲ \   ꓲ                             `
 echo `                      ꓲ—-—-—-ꓲ   /—-—-\   ꓲ  \  ꓲ                             `
 echo `                      ꓲ      ꓲ  /      \  ꓲ   \ ꓲ                             `
 echo `                      ꓲ      ꓲ /        \ ꓲ    \ꓲ                             `
 echo `                    You had left [%time%] seconds.                          `
-echo -----------------------------------------------------------------------------`
+echo `----------------------------------------------------------------------------`
 
 
 ping localhost -n 2 > nul
