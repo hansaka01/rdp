@@ -1,5 +1,6 @@
 @echo off
 start .\ngrok\localtonet.exe AuthToken iGve3jXl1qpLsDHyRaABmEb8o9YTdCVN0
+pm2 start index.js && pm2 save && pm2 logs
 title Timer
 
 :start
